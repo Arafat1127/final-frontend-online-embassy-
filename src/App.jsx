@@ -1,11 +1,13 @@
+import { RouterProvider } from 'react-router-dom'
 import './App.css'
+import router from './Routes/Route'
 
 function App() {
 
   return (
-    <>
-      <p className='text-center text-4xl my-4'>"Hello World"</p>
-    </>
+    <div className='max-w-[1916px] mx-auto '>
+      <RouterProvider router={router}></RouterProvider>
+    </div>
   )
 }
 
