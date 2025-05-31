@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../../assets/images/logo.png';
+// import logo from '../../../assets/images/embassy-logo.png';
 import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
@@ -7,14 +8,15 @@ const Header = () => {
     const menuItems = (
         <React.Fragment>
             <li><NavLink to='/'>Home</NavLink></li>
+            <li><NavLink to='/visa'>Visa</NavLink></li>
             <li><NavLink to='/about'>About</NavLink></li>
             <li><NavLink to='/contact'>Contact</NavLink></li>
-            <li><NavLink to='/appointment'>Appointment</NavLink></li>
+
         </React.Fragment>
     )
 
     return (
-        <div className="navbar shadow-sm h-[70px] px-4">
+        <div className="navbar bg-white fixed top-0 left-0 right-0 z-50  shadow-sm h-[70px] px-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
